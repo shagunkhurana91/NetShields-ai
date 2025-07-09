@@ -13,7 +13,8 @@ load_dotenv()
 model = joblib.load("rf_fraud_model.pkl")              
 scaler = joblib.load("rf_scaler.pkl")                  
 
-GROQ_API_KEY = st.secrets["GROQ_API_KEY"]      
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+      
 
 explainer = shap.Explainer(model)
 
