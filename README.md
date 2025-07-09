@@ -5,6 +5,13 @@ NetShields AI is a real-time anomaly detection platform built to serve a variety
 👉 [Try NetShields AI on Streamlit Cloud](https://netshields-ai.streamlit.app) *(Link placeholder — deploy on Streamlit Cloud and attach)*
 
 ---
+## Dataset Access
+
+You can use the sample dataset from Kaggle:
+
+🔗 [Login Risk-Based Authentication Dataset](https://kaggle.com/datasets/dasgroup/rba-dataset)
+
+--- 
 
 ## 🧠 Project Summary
 
@@ -123,6 +130,11 @@ cd netshields-ai
 pip install -r requirements.txt
 streamlit run app.py
 ```
+📁 Dataset Access
+
+You can use the sample dataset from Kaggle:
+
+🔗 [Login Risk-Based Authentication Dataset](https://kaggle.com/datasets/dasgroup/rba-dataset)
 
 ---
 
