@@ -1,0 +1,75 @@
+timestamp,user_id,total_logins,failed_logins,hour,probability,risk_score,prediction,shap_summary,genai_explanation
+2025-07-09 22:17:08,user_001,10,5,2,0.333,33,Fraud,total_logins increased fraud score by 0.03; hour increased fraud score by 0.08; failed_login_ratio increased fraud score by 0.15; success_rate decreased fraud score by 0.03; logins_per_hour decreased fraud score by 0.05,"This login attempt might be suspicious because:
+
+* The user tried to log in many times (high `total_logins`).
+* They did it during a specific hour of the day (unusual `hour` pattern).
+* They had a high number of failed login attempts (high `failed_login_ratio`).
+* But, they were successful only a few times (low `success_rate`).
+* And, they tried to log in multiple times within a short period (high `logins_per_hour`).
+
+These factors together suggest that this might not be a normal user behavior, and could be a potential fraud attempt."
+2025-07-09 22:17:20,user_001,15,5,2,0.4312,43,Fraud,total_logins increased fraud score by 0.01; failed_logins decreased fraud score by 0.04; hour increased fraud score by 0.10; failed_login_ratio decreased fraud score by 0.02; is_off_hours increased fraud score by 0.01; logins_per_hour increased fraud score by 0.04; login_intensity decreased fraud score by 0.01,"Based on the analysis, this login attempt might be suspicious because:
+
+* The login happened at an unusual hour (hour: 0.10)
+* The user is logging in at a high rate (logins_per_hour: 0.04)
+
+These factors suggest that the login attempt might not be a normal user behavior, and therefore, it's considered suspicious."
+2025-07-09 22:17:26,user_001,15,5,3,0.4317,43,Fraud,total_logins increased fraud score by 0.01; failed_logins decreased fraud score by 0.04; hour increased fraud score by 0.10; failed_login_ratio decreased fraud score by 0.02; is_off_hours increased fraud score by 0.01; logins_per_hour increased fraud score by 0.04; login_intensity decreased fraud score by 0.01,"Based on the SHAP analysis, this login attempt might be suspicious because:
+
+* It happened at an unusual hour (hour increased fraud score by 0.10)
+* There were a higher than normal number of logins in a short period of time (logins_per_hour increased fraud score by 0.04)
+
+These factors suggest that the login attempt may not be a normal user behavior, which is why it's flagged as suspicious."
+2025-07-09 22:17:32,user_001,15,5,22,0.5897,59,Fraud,total_logins increased fraud score by 0.02; failed_logins decreased fraud score by 0.06; hour increased fraud score by 0.02; failed_login_ratio decreased fraud score by 0.04; success_rate decreased fraud score by 0.01; logins_per_hour increased fraud score by 0.06; login_intensity decreased fraud score by 0.08,"Based on the analysis, this login attempt might be suspicious because:
+
+* The user has made a high number of logins (total_logins) and logins per hour (logins_per_hour), which is unusual behavior.
+* The user has a high intensity of logins (login_intensity), which could indicate automated attempts.
+* The user has a low success rate (success_rate) and a high failed login ratio (failed_login_ratio), which suggests they may be trying different credentials.
+
+This combination of factors suggests that the login attempt might be a fraudulent activity, such as a brute-force attack or credential stuffing."
+2025-07-09 22:17:41,user_001,15,5,23,0.4957,50,Fraud,total_logins increased fraud score by 0.01; failed_logins decreased fraud score by 0.04; failed_login_ratio decreased fraud score by 0.01; is_off_hours increased fraud score by 0.02; logins_per_hour increased fraud score by 0.07; login_intensity decreased fraud score by 0.06; is_night_time increased fraud score by 0.01,"Based on the analysis, this login attempt might be suspicious because:
+
+* The user is logging in at an unusual time (is_off_hours and is_night_time).
+* They are trying to log in frequently in a short period (logins_per_hour is high).
+* However, they are not very successful in their attempts (failed_logins and failed_login_ratio are high).
+
+This behavior is uncommon and may indicate a bot or someone trying to guess the password, which is why the fraud score is increased."
+2025-07-09 22:17:46,user_001,15,5,18,0.7495,75,Fraud,failed_logins decreased fraud score by 0.09; failed_login_ratio decreased fraud score by 0.06; success_rate decreased fraud score by 0.03; logins_per_hour increased fraud score by 0.01; login_intensity decreased fraud score by 0.09,"This login attempt might be suspicious because:
+
+* The user had several failed login attempts (failed_logins and failed_login_ratio), which suggests they may not be the real user.
+* They have a low success rate of logins (success_rate), which is unusual.
+* However, they are trying to login frequently in a short period of time (logins_per_hour), which could be a sign of automated attempts.
+* On the other hand, the intensity of their login attempts is low (login_intensity), which might indicate they're trying to avoid detection.
+
+Overall, this combination of factors suggests that the login attempt might be a fraudulent activity, such as a bot or a hacker trying to gain unauthorized access."
+2025-07-09 22:17:54,user_001,15,5,17,0.7111,71,Fraud,total_logins increased fraud score by 0.01; failed_logins decreased fraud score by 0.08; failed_login_ratio decreased fraud score by 0.05; success_rate decreased fraud score by 0.02; login_intensity decreased fraud score by 0.08,"This login attempt might be suspicious because:
+
+* The user has made a lot of login attempts (total_logins), which is slightly unusual.
+* On the other hand, they didn't fail many times (failed_logins) and their failed login ratio is low, which is good.
+* However, their success rate is lower than expected (success_rate), which is a bit suspicious.
+* What's more concerning is that they are trying to log in very frequently (login_intensity), which could indicate automated attempts.
+
+Overall, this combination of factors suggests that the login attempt might be a bot or an attacker trying to guess the password."
+2025-07-09 22:17:59,user_001,15,5,18,0.7495,75,Fraud,failed_logins decreased fraud score by 0.09; failed_login_ratio decreased fraud score by 0.06; success_rate decreased fraud score by 0.03; logins_per_hour increased fraud score by 0.01; login_intensity decreased fraud score by 0.09,"Based on the analysis, this login attempt might be suspicious because:
+
+* The user had several failed login attempts (failed_logins and failed_login_ratio), which suggests they may not be the actual account owner.
+* The user's login success rate is low (success_rate), which could indicate they're trying different passwords or credentials.
+* The user's login behavior is unusual, with a high number of logins in a short time (logins_per_hour), which might be a sign of automated login attempts.
+* The user's login pattern is intense and rapid (login_intensity), which could be indicative of a brute-force attack.
+
+These factors combined raise some red flags, suggesting that this login attempt might be fraudulent."
+2025-07-09 22:18:06,user_001,15,6,18,0.3365,34,Fraud,total_logins increased fraud score by 0.02; failed_logins decreased fraud score by 0.02; failed_login_ratio increased fraud score by 0.21; success_rate decreased fraud score by 0.03; logins_per_hour increased fraud score by 0.01; login_intensity decreased fraud score by 0.04,"Based on the analysis, this login attempt might be suspicious because:
+
+* The user has a high ratio of failed logins to total logins (failed_login_ratio), which suggests they may be trying different passwords or usernames.
+* They have a high number of logins in a short period of time (logins_per_hour), which could indicate automated attempts.
+
+These behaviors are uncommon for legitimate users, which is why the fraud score is increased."
+2025-07-09 22:18:13,user_001,15,4,18,0.7772,78,Fraud,failed_logins decreased fraud score by 0.09; failed_login_ratio decreased fraud score by 0.02; success_rate decreased fraud score by 0.06; logins_per_hour increased fraud score by 0.01; login_intensity decreased fraud score by 0.12,"Based on the analysis, this login attempt might be suspicious because:
+
+* The user had several failed logins (failed_logins), which is unusual.
+* The ratio of failed logins to total attempts (failed_login_ratio) is also higher than normal.
+* The user's success rate of logins is lower than expected (success_rate).
+* However, the user is trying to log in very frequently (logins_per_hour).
+* But, the intensity of these login attempts is quite high (login_intensity), which could indicate a brute-force attack.
+
+Overall, this combination of factors suggests that the login attempt may be a fraudulent activity, such as someone trying to hack into an account."
