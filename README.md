@@ -130,13 +130,7 @@ cd netshields-ai
 pip install -r requirements.txt
 streamlit run app.py
 ```
-📁 Dataset Access
 
-You can use the sample dataset from Kaggle:
-
-🔗 [Login Risk-Based Authentication Dataset](https://kaggle.com/datasets/dasgroup/rba-dataset)
-
----
 
 
 ### 🌟 Make anomalies explainable. Make intelligence actionable.
